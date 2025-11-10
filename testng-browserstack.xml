@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ElPais BrowserStack Suite" parallel="methods" thread-count="5">
+	<test name="Cucumber BrowserStack">
+		<parameter name="BROWSERSTACK" value="true"/>
+		<classes>
+			<class name="com.elpais.runners.CucumberTestRunner"/>
+		</classes>
+	</test>
+</suite>
+
+
