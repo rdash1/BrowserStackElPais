@@ -1,3 +1,27 @@
+Requirements Checklist
+- Visit El País website
+✔ Framework opens elpais.com homepage in Spanish (es-ES).
+- Verify language
+✔ Confirms page text is displayed in Spanish.
+- Scrape Opinion section
+✔ Navigates to Opinión section.
+✔ Fetches first 5 articles (title, content, cover image).
+- Print Spanish content
+✔ Logs titles and content in Spanish.
+- Download cover images
+✔ Saves images locally (output/images).
+✔ Screenshots saved (output/screenshots).
+- Translate headers
+✔ Uses translation API (MyMemory) for ES → EN.
+✔ Prints translated titles in English.
+- Analyze repeated words
+✔ Identifies words repeated ≥ 2 times across translated headers.
+✔ Prints word + occurrence count.
+- Cross-browser testing
+✔ Runs locally (Chrome, Firefox, Edge).
+✔ Configured for BrowserStack with environment credentials.
+✔ Executes in 5 parallel threads via BrowserStack.
+
 ## El País BDD Selenium Framework (Java + Cucumber + TestNG)
 
 Modular Selenium framework using Cucumber (BDD) to:
@@ -81,5 +105,6 @@ git push -u origin master
 ### BrowserStack Logs/Screenshots
 - BrowserStack automatically captures session logs and screenshots.
 - See the build “ElPais BDD” in the BrowserStack Automate dashboard.
+
 
 
